@@ -46,6 +46,8 @@ export const Sidebar = styled('aside')`
     color: ${props => props.theme.colors.text};
   }
 
+
+
   @media only screen and (max-width: 50rem) {
     width: 100%;
     position: relative;
@@ -89,4 +91,5 @@ export const ListItem = styled(({ className, active, level, ...props }) => {
       margin-right: 1rem;
     }
   }
+
 `;

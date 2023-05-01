@@ -35,7 +35,7 @@ class ThemeProvider extends React.Component {
     const currentActiveTheme = isDarkThemeActive ? darkTheme : lightTheme;
 
     return (
-      <div>
+      <div className={isDarkThemeActive ? 'dark-theme' : 'light-theme'}>
         <Global styles={[baseStyles, ...styles]} />
         <Header
           location={location}
